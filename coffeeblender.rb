@@ -4,7 +4,7 @@ require 'fssm'
 require 'choice'
 
 version = "1.0"
-this_folder = File.dirname(__FILE__)
+this_folder = Dir.pwd #File.dirname(__FILE__)
 
 $choices = Choice.options do
   header 'CoffeeBlender options:'
