@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    choice (0.1.4)
+    fssm (0.2.7)
+    rb-fsevent (0.4.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  choice
+  fssm
+  rb-fsevent
