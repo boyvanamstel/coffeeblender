@@ -4,7 +4,6 @@ require 'fssm'
 require 'choice'
 
 version = "1.0"
-this_folder = Dir.pwd #File.dirname(__FILE__)
 
 $choices = Choice.options do
   header 'CoffeeBlender options:'
@@ -56,7 +55,7 @@ end
 
 # Setup FSSM to watch the current folder
 FSSM.monitor do
-  path this_folder do
+  path $choices.compile do
     update { |b,r| act(b,r) }
     delete { |b,r| act(b,r) }
     create { |b,r| act(b,r) }

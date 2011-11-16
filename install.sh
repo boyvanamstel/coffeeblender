@@ -1,6 +1,6 @@
 #! /bin/sh
-
 if [ -s coffeeblender.rb ]; then
+  bundle
   if ln -s $PWD/coffeeblender.rb /usr/bin/coffeeblender; then
     printf "Shortcut created, run coffeeblender from one of your projects\n"
   else
